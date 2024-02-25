@@ -1,0 +1,123 @@
+
+ /*-------------------------------------*\
+ | - estilos de la caja de descripcion - |
+ \*-------------------------------------*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body {
+     background-color: #b7d8db;
+     color: black;
+     max-width: 1200px;
+     margin: 0 auto;
+     height: 100vh;
+     overflow-x: hidden;
+ }
+ 
+ .project__container {
+  margin: 0em;
+  padding: 5em;
+}
+.municipio__header {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: bolder;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.6em;
+  border-bottom: 2px solid #343434;
+  
+}
+.municipio__header-title {
+  padding-left: 0.8em;
+  width: 35%;
+}
+.municipio__header-description {
+  width: 65%;
+  display: flex;
+  align-content: start;
+}
+.municipios__box {
+    width: 100%;
+    margin-top: 0;
+    
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #343434;
+}
+.municipio__container__title {
+    display: flex;
+    /*justify-content: space-around;*/
+    width: 30%;
+    
+    padding: 0.4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-direction: column;
+   
+}
+.municipio__item__title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    width: 100%;
+    min-height: 2em;
+  	padding-left: 0.5em;
+    font-size: 17px;
+    color: #363636;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.municipio__item__title.active {
+  background-color: rgba(146, 146, 247, 0.484);
+  color: #3030fe;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.municipio__container__description {
+    display: flex;
+    flex-direction: column;
+  	width: 70%;
+    margin-left: 2em;
+
+}
+
+.municipio__description-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.5em; 
+}
+.municipio__description-p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000000;
+  padding-bottom: 0.8em;
+}
+
+.municipio__description {
+  display: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.municipio__description.active {
+  display: flex;
+  color: #090909;
+  
+  font-size: 16px;
+  flex-direction: column;
+  margin-top: 1.8em;
+}
+
+
+
+
