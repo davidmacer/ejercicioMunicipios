@@ -1,29 +1,3 @@
-
-
-
-/*function checkMunicipios() {
-    const municipioTitles = document.querySelectorAll('.municipio__item__title');
-    const munDescription = document.querySelectorAll('.municipio__description');
-    municipioTitles.forEach((element, index) => {
-        element.addEventListener('click', event => {
-            event.stopPropagation();
-            munDescription.forEach((content, ind) => {
-                if (index!==ind) {
-                    content.classList.remove('active');
-                }
-            });
-            municipioTitles.forEach((content, ind) => {
-                if (index!==ind) {
-                    content.classList.remove('active');
-                }
-            });
-            munDescription[index].classList.toggle('active');
-            municipioTitles[index].classList.toggle('active');
-        });
-    });
-};
-checkMunicipios();*/
-
 function checkMunicipios() {
     const municipioTitles = document.querySelectorAll('.municipio__item__title');
     const munDescription = document.querySelectorAll('.municipio__description');
